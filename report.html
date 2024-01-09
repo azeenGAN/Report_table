@@ -1,0 +1,634 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>report</title>
+    <link rel="icon" type="image/x-icon" href="images/jasperimg.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        *{
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+        }
+        .main{
+            width: 100%;
+            height: 100vh;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            justify-content:space-between;
+            
+    
+            
+        }
+        .upperpart{
+            padding: 10px;
+        }
+        .mostupper{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .leftpart{
+            display: flex;
+            align-items: center;
+            
+        }
+        .leftpart img{
+            width: 50px;
+        }
+        .leftpart p{
+            padding-left: 8px;
+            font-size: 21px;
+            font-style: italic;
+            font-weight: 600;
+        }
+       .rightpart small{
+        font-size: 9px;
+        font-weight: 550;
+       }
+       .upper{
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        margin-top: 10px;
+        margin-bottom: 20px;
+       }
+       .maintable{
+        
+        border-collapse: collapse;
+        border-spacing: 0;
+        font-size: 10px;
+        width: 99.5%;
+       
+        
+       }
+        th{
+            padding: 1px 0px;
+            font-size: 9px;
+       }  
+       .firstrow{
+        height: 38px;
+       }
+       .lesswidth{
+        width: 40px;
+       }
+       .fazool{
+        height: 17px;
+       }
+       td{
+        text-transform: capitalize;
+        font-weight: 500;
+        font-size: 9px;
+        
+       }
+       .signatures{
+        width:99%;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        padding-top: 30px;
+       }
+       .line {
+        height: 2px;
+        width: 23vw;
+        background-color: #808080;
+        }
+      .sig{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+      .sig h5{
+        margin: 2px;
+        font-size: 12px;
+        
+      }
+      .lowerpart{
+        padding: 10px;
+      }
+      .lowerpart .firstline{
+        width: 100%;
+        height: 5px;
+        background-color: orangered;
+        margin-bottom: 5px;
+      }
+      .lowerpart .secondline{
+        width: 100%;
+        height: 5px;
+        background-color: rgb(112, 2, 2);
+        
+        
+      }
+      .lowest{
+        display: flex;
+        justify-content: space-between;
+      }
+      .lowest p{
+        font-size:small;
+        height: 20px;
+        padding: 10px 0px;
+        font-weight: 300;
+      }
+      @media print{
+        
+        .lowest p{
+            padding: 20px 0px 0px 0px;
+        }
+        th{
+            padding: 0px;
+            font-size: 8px;
+            width:min-content
+       }  
+       .name{
+        font-size: 8px;
+        text-align: left;
+       }
+       .sig h5{
+        margin: 2px;
+        font-size: 11px;
+      }
+      .row2{
+        padding: 2px;
+        
+      }
+      .upperpart{
+            padding: 0px;
+        }
+        
+      }
+      @media only screen and (min-width:1600px){
+        th{
+            font-size: 0.7vw;
+        }
+        td{
+            font-size: 0.68vw;
+        }
+        .lesswidth{
+            width:max-content;
+        }
+        .rightpart small{
+        font-size: 0.6vw;
+        font-weight: 550;
+       }
+       .leftpart p{
+            font-size: 1.1vw;
+        }
+        .leftpart img{
+            width: 3vw;
+        }
+        .sig h5{
+        
+        font-size: 0.8vw;
+        
+      }
+      .lowest p{
+        font-size:large;
+        
+        font-weight: 400; 
+      }
+      }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="upperpart">
+            <div class="mostupper">
+                <div class="leftpart">
+                    <img src="images/jasperimg.png" alt="alkhidmat"
+                    loading="eager">
+                    <p>Alkhidmat Foundation Pakistan</p>
+                </div>
+                <div  class="rightpart">
+                    <small>01/07/2020 to 22/07/2020</small>
+                </div>
+            </div>
+            <div class="upper">
+                <table border="2 black solid" class="maintable"><thead>
+                    <tr class="firstrow">
+                        <th rowspan="2">Sr #</th>
+                        <th rowspan="2">Name</th>
+                        <th rowspan="2">Description</th>
+                        <th rowspan="2">Department</th>
+                        <th rowspan="2">Status</th>
+                        <th  colspan=3>
+                            Casual leaves
+                        </th>
+                        <th colspan="3">medical Leaves</th>
+                        <th colspan="3">Earned / Recreational Leaves</th>
+                        <th rowspan="2">Late .Ded</th>
+                        <th rowspan="2">Early .Ded</th>
+                        <th rowspan="2">Missing .Ded</th>
+                        <th rowspan="2">Absent</th> 
+                        <th class="lesswidth" rowspan="2">Paid Days</th>
+                    </tr>
+                    <tr><th class="row2">Allowed</th>
+                        <th class="row2">Availed</th>
+                        <th class="row2">Balance</th>
+                        <th class="row2">Allowed</th>
+                        <th class="row2">Availed</th>
+                        <th class="row2">Balance</th>
+                        <th class="row2">Allowed</th>
+                        <th class="row2">Availed</th>
+                        <th class="row2">Balance</th>
+                    </tr>
+                    <tr class="fazool">
+                        <th></th>
+                        <th></th>
+                        <th></th>
+                        <th></th>
+                        <th></th>
+                        <th></th>
+                        <th></th>
+                        <th></th>
+                        <th></th>
+                        <th></th>
+                        <th></th>
+                        <th></th>
+                        <th></th>
+                        <th></th>
+                        <th class="lesswidth"></th>
+                        <th class="lesswidth"></th>
+                        <th class="lesswidth"></th>
+                        <th class="lesswidth"></th>
+                        <th class="lesswidth"></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>56</td> 
+                        <td class="name"> muhammad ali hayat</td>
+                        <td class="name">program manager ofsp</td>
+                        <td class="name">orphan support</td>
+                        <td class="status name"></td>
+                        <td class="causalleavesallowed"></td>
+                        <td class="casualleavesavailed"></td>
+                        <td>12</td>
+                        <td class="medicalleavesallowed"></td>
+                        <td class="medicalleavesavailed"></td>
+                        <td>4</td>
+                        <td class="earnedleaveallowed"></td>
+                        <td>0</td>
+                        <td class="earnedleavebalance"></td>
+                        <td class="lesswidth">0</td>
+                        <td class="lesswidth">0</td>
+                        <td class="lesswidth">0</td>
+                        <td class="lesswidth">0</td>
+                        <td class="lesswidth">22</td>
+                    </tr>
+                    <tr>
+                        <td>57</td>
+                        <td class="name">muhammad rizwan</td>
+                        <td class="name">deputy program manager ofsp</td>
+                        <td class="name">orphan family support</td>
+                        <td class="status name"></td>
+                        <td class="causalleavesallowed"></td>
+                        <td class="casualleavesavailed"></td>
+                        <td>12</td>
+                        <td class="medicalleavesallowed"></td>
+                        <td class="medicalleavesavailed"></td>
+                        <td>6</td>
+                        <td class="earnedleaveallowed"></td>
+                        <td>0</td>
+                        <td class="earnedleavebalance"></td>
+                        <td class="lesswidth">0</td>
+                        <td class="lesswidth">0</td>
+                        <td class="lesswidth">0</td>
+                        <td class="lesswidth">0</td>
+                        <td class="lesswidth">22</td>
+                    </tr>
+                    <tr>
+                        <td>58</td>
+                        <td class="name">deputy manager planning</td>
+                        <td class="name">orphan family support</td>
+                        <td class="name">orphan family support</td>
+                        <td class="status name"></td>
+                        <td class="causalleavesallowed"></td>
+                        <td class="casualleavesavailed"></td>
+                        <td>12</td>
+                        <td class="medicalleavesallowed"></td>
+                        <td class="medicalleavesavailed"></td>
+                        <td>5</td>
+                        <td class="earnedleaveallowed"></td>
+                        <td>0</td>
+                        <td class="earnedleavebalance"></td>
+                        <td class="lesswidth">0</td>
+                        <td class="lesswidth">0</td>
+                        <td class="lesswidth">0</td>
+                        <td class="lesswidth">0</td>
+                        <td class="lesswidth">22</td>
+                    </tr>
+                    <tr>
+                        <td>59</td>
+                        <td class="name">rufus iqbal</td>
+                        <td class="name">program officer ofsp</td>
+                        <td class="name">orphan family support</td>
+                        <td class="status name"></td>
+                        <td class="causalleavesallowed"></td>
+                        <td class="casualleavesavailed"></td>
+                        <td>11</td>
+                        <td class="medicalleavesallowed"></td>
+                        <td class="medicalleavesavailed"></td>
+                        <td>7</td>
+                        <td class="earnedleaveallowed"></td>
+                        <td>0</td>
+                        <td class="earnedleavebalance"></td>
+                        <td class="lesswidth">0</td>
+                        <td class="lesswidth">0</td>
+                        <td class="lesswidth">0</td>
+                        <td class="lesswidth">0</td>
+                        <td class="lesswidth">22</td>
+                    </tr>
+                    <tr>
+                        <td>60</td>
+                        <td class="name">muhammad farooq munir</td>
+                        <td class="name">assistant manager planning</td>
+                        <td class="name">planning & development</td>
+                        <td class="status name"></td>
+                        <td class="causalleavesallowed"></td>
+                        <td class="casualleavesavailed"></td>
+                        <td>12</td>
+                        <td class="medicalleavesallowed"></td>
+                        <td class="medicalleavesavailed"></td>
+                        <td>7</td>
+                        <td class="earnedleaveallowed"></td>
+                        <td>0</td>
+                        <td class="earnedleavebalance"></td>
+                        <td class="lesswidth">0</td>
+                        <td class="lesswidth">0</td>
+                        <td class="lesswidth">0</td>
+                        <td class="lesswidth">0</td>
+                        <td class="lesswidth">22</td>
+                    </tr>
+                    <tr>
+                        <td>61</td>
+                        <td class="name">saad saeed</td>
+                        <td class="name">seniormanager planning and developemnt</td>
+                        <td class="name">planning and development</td>
+                        <td class="status name"></td>
+                        <td class="causalleavesallowed"></td>
+                        <td class="casualleavesavailed"></td>
+                        <td>12</td>
+                        <td class="medicalleavesallowed"></td>
+                        <td class="medicalleavesavailed"></td>
+                        <td>7</td>
+                        <td class="earnedleaveallowed"></td>
+                        <td>0</td>
+                        <td class="earnedleavebalance"></td>
+                        <td class="lesswidth">0</td>
+                        <td class="lesswidth">0</td>
+                        <td class="lesswidth">0</td>
+                        <td class="lesswidth">0</td>
+                        <td class="lesswidth">22</td>
+                    </tr>
+                    <tr>
+                        <td>62</td>
+                        <td class="name">hammad akhtar</td>
+                        <td class="name">general manager programs</td>
+                        <td class="name">programs</td>
+                        <td class="status name"></td>
+                        <td class="causalleavesallowed"></td>
+                        <td class="casualleavesavailed"></td>
+                        <td>12</td>
+                        <td class="medicalleavesallowed"></td>
+                        <td class="medicalleavesavailed"></td>
+                        <td>7</td>
+                        <td class="earnedleaveallowed"></td>
+                        <td>0</td>
+                        <td class="earnedleavebalance"></td>
+                        <td class="lesswidth">0</td>
+                        <td class="lesswidth">0</td>
+                        <td class="lesswidth">0</td>
+                        <td class="lesswidth">0</td>
+                        <td class="lesswidth">22</td>
+                    </tr>
+                    <tr>
+                        <td>63</td>
+                        <td class="name">muhammad amjad</td>
+                        <td class="name">deputy manager accounts</td>
+                        <td class="name">regional finance desk</td>
+                        <td class="status name"></td>
+                        <td class="causalleavesallowed"></td>
+                        <td class="casualleavesavailed"></td>
+                        <td>12</td>
+                        <td class="medicalleavesallowed"></td>
+                        <td class="medicalleavesavailed"></td>
+                        <td>7</td>
+                        <td class="earnedleaveallowed"></td>
+                        <td>0</td>
+                        <td class="earnedleavebalance"></td>
+                        <td class="lesswidth">0</td>
+                        <td class="lesswidth">0</td>
+                        <td class="lesswidth">0</td>
+                        <td class="lesswidth">0</td>
+                        <td class="lesswidth">22</td>
+                    </tr>
+                    <tr>
+                        <td>64</td>
+                        <td class="name">murtaza hussain</td>
+                        <td class="name">manager RMD</td>
+                        <td class="name">resource mobilization</td>
+                        <td class="status name"></td>
+                        <td class="causalleavesallowed"></td>
+                        <td class="casualleavesavailed"></td>
+                        <td>11</td>
+                        <td class="medicalleavesallowed"></td>
+                        <td class="medicalleavesavailed"></td>
+                        <td>7</td>
+                        <td class="earnedleaveallowed"></td>
+                        <td>0</td>
+                        <td class="earnedleavebalance"></td>
+                        <td class="lesswidth">0</td>
+                        <td class="lesswidth">0</td>
+                        <td class="lesswidth">0</td>
+                        <td class="lesswidth">0</td>
+                        <td class="lesswidth">22</td>
+                    </tr>
+                    <tr>
+                        <td>65</td>
+                        <td class="name">m. younus munir</td>
+                        <td class="name">assistant manager RM</td>
+                        <td class="name">resource mobilization</td>
+                        <td class="status name"></td>
+                        <td class="causalleavesallowed"></td>
+                        <td class="casualleavesavailed"></td>
+                        <td>12</td>
+                        <td class="medicalleavesallowed"></td>
+                        <td class="medicalleavesavailed"></td>
+                        <td>7</td>
+                        <td class="earnedleaveallowed"></td>
+                        <td>0</td>
+                        <td class="earnedleavebalance"></td>
+                        <td>0</td>
+                        <td class="lesswidth">0</td>
+                        <td class="lesswidth">0</td>
+                        <td class="lesswidth">0</td>
+                        <td class="lesswidth">22</td>
+                    </tr>
+                    <tr>
+                        <td>66</td>
+                        <td class="name">umair ur hassan</td>
+                        <td class="name">assistant manager RM</td>
+                        <td class="name">Resource mobilization</td>
+                        <td class="status name"></td>
+                        <td class="causalleavesallowed"></td>
+                        <td class="casualleavesavailed"></td>
+                        <td>12</td>
+                        <td class="medicalleavesallowed"></td>
+                        <td class="medicalleavesavailed"></td>
+                        <td>6</td>
+                        <td class="earnedleaveallowed"></td>
+                        <td>0</td>
+                        <td class="earnedleavebalance"></td>
+                        <td class="lesswidth">0</td>
+                        <td class="lesswidth">0</td>
+                        <td class="lesswidth">0</td>
+                        <td class="lesswidth">0</td>
+                        <td class="lesswidth">22</td>
+                    </tr>
+                    <tr>
+                        <td>67</td>
+                        <td class="name">muhammad umair</td>
+                        <td class="name">assistant manager graphic designer</td>
+                        <td class="name">resource mobilization</td>
+                        <td class="status name"></td>
+                        <td class="causalleavesallowed"></td>
+                        <td class="casualleavesavailed"></td>
+                        <td>12</td>
+                        <td class="medicalleavesallowed"></td>
+                        <td class="medicalleavesavailed"></td>
+                        <td>7</td>
+                        <td class="earnedleaveallowed"></td>
+                        <td>0</td>
+                        <td class="earnedleavebalance"></td>
+                        <td class="lesswidth">0</td>
+                        <td class="lesswidth">0</td>
+                        <td class="lesswidth">0</td>
+                        <td class="lesswidth">0</td>
+                        <td class="lesswidth">22</td>
+                    </tr>
+                    <tr>
+                        <td>68</td>
+                        <td class="name">faizan butt</td>
+                        <td class="name">renior call center officer</td>
+                        <td class="name">resource mobilization</td>
+                        <td class="status name"></td>
+                        <td class="causalleavesallowed"></td>
+                        <td class="casualleavesavailed"></td>
+                        <td>11</td>
+                        <td class="medicalleavesallowed"></td>
+                        <td class="medicalleavesavailed"></td>
+                        <td>7</td>
+                        <td class="earnedleaveallowed"></td>
+                        <td>20</td>
+                        <td class="earnedleavebalance"></td>
+                        <td class="lesswidth">0</td>
+                        <td class="lesswidth">0</td>
+                        <td class="lesswidth">0</td>
+                        <td class="lesswidth">0</td>
+                        <td class="lesswidth">22</td>
+                    </tr>
+                    <tr>
+                        <td>69</td>
+                        <td class="name">noman farooq</td>
+                        <td class="name">senior RM officer</td>
+                        <td class="name">resource mobilization</td>
+                        <td class="status name"></td>
+                        <td class="causalleavesallowed"></td>
+                        <td class="casualleavesavailed"></td>
+                        <td>12</td>
+                        <td class="medicalleavesallowed"></td>
+                        <td class="medicalleavesavailed"></td>
+                        <td>7</td>
+                        <td class="earnedleaveallowed"></td>
+                        <td>0</td>
+                        <td class="earnedleavebalance"></td>
+                        <td class="lesswidth">0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td class="lesswidth">22</td>
+                    </tr>
+                    <tr>
+                        <td>70</td>
+                        <td class="name">muhammad saeed atif</td>
+                        <td class="name">office assistant</td>
+                        <td class="name">resource mobilization</td>
+                        <td class="status name"></td>
+                        <td class="causalleavesallowed"></td>
+                        <td class="casualleavesavailed"></td>
+                        <td>10</td>
+                        <td class="medicalleavesallowed"></td>
+                        <td class="medicalleavesavailed"></td>
+                        <td>7</td>
+                        <td class="earnedleaveallowed"></td>
+                        <td>20</td>
+                        <td class="earnedleavebalance"></td>
+                        <td class="lesswidth">0</td>
+                        <td class="lesswidth">0</td>
+                        <td class="lesswidth">0</td>
+                        <td class="lesswidth">0</td>
+                        <td class="lesswidth">22</td>
+                    </tr>
+                    <tr>
+                        <td>71</td>
+                        <td class="name">tanveer hussain gondal</td>
+                        <td class="name">manager volunteer</td>
+                        <td class="name">volunteer management</td>
+                        <td class="status  name"></td>
+                        <td class="causalleavesallowed"></td>
+                        <td class="casualleavesavailed"></td>
+                        <td>10</td>
+                        <td class="medicalleavesallowed"></td>
+                        <td class="medicalleavesavailed"></td>
+                        <td>18</td>
+                        <td class="earnedleaveallowed"></td>
+                        <td>0</td>
+                        <td class="earnedleavebalance"> </td>
+                        <td class="lesswidth">0</td>
+                        <td class="lesswidth">0</td>
+                        <td class="lesswidth">0</td>
+                        <td class="lesswidth">0</td>
+                        <td class="lesswidth">22</td>
+                    </tr>
+                   
+                </tbody>
+                
+                </table>
+                
+            </div>
+            <div class="signatures">
+                <div class="sig">
+                    <div class="line"></div>
+                    <h5>prepared by</h5>
+                    <h5>M.Bilal Arshad. Assistant Manager HR</h5>
+                </div>
+                <div class="sig">
+                    <div class="line"></div>
+                    <h5>Recomended By</h5>
+                    <h5>Hasan-Ul-Maghira Zafar. Senior Manager HR</h5>
+                </div>
+                <div class="sig">
+                    <div class="line"></div>
+                    <h5>Approved by</h5>
+                    <h5>Khubaib bilal. Executive director</h5>
+                </div>
+            </div>
+        </div>
+        <div class="lowerpart">
+        <div class="firstline"></div>
+        <div class="secondline"></div>
+        <div class="lowest"> 
+            <p>3-KM Alkhidmat Complex, Khayaban-e-jinnah, Lahore</p>
+            <p>19 - Dec 2023 04:50 PM</p>
+        </div>
+   
+        </div>
+    </div>
+    <script src="power.js"></script>
+</body>
+</html>
